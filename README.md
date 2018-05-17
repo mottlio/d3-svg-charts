@@ -5,3 +5,5 @@ It includes a transition with the following custom attributes:
 transition.delay()
 transition.ease()
 transition.duration()
+
+Project url: https://mottlio.github.io/d3-svg-historgam-transitions/
