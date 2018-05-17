@@ -52,6 +52,9 @@ d3.select("input")
                 return d.year === year;
             }))
           .transition()
+            .duration(2000) //changing the default duration
+            .ease(d3.easeLinear) // change the default easein function from cubic to linear
+            .delay((d, i) => i * 250) //delay dependent on the index
             .attr("height", function(d){
                 return height - yScale(d.births);
             })
